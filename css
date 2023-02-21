@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+
+    
+  
+    <style>
+        .nav li{ 
+            display: inline-block;
+            color: aqua;
+            text-align: left;
+            padding: 5px;
+            float: right;
+            
+            
+            
+
+        }
+        .nav{
+            padding: 0px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="nav">
+            <img src="assets/woman.jpg" alt="To the sky" style="float: left;height: 40px;width: 60px;"> 
+        
+        
+        <ul>
+           
+            <li><a href="" >Contact</a></li>
+            <li><a href="" >Sign in/Profile/Login/Login</a></li>
+        </ul>
+    </div>
+    </nav>
+    <h1 style="background-color: powderblue ; text-align: center; border-radius: 4px;">
+        <img src="assets/—Pngtree—floating realistic clouds_8623463.png" height="30px" width="30px"> To the sky</h1>
+
+      
+</body>
+</html>

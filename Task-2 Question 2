@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+    <style>
+        div {
+           
+            border-style: ridge none;
+            border-color: black black;
+            border-radius: 1px 1px;
+            font-size: medium;
+            background-color: darkturquoise;
+            
+        }
+        pre{
+             color: rgb(255, 0, 0);
+             font-size: larger;
+        
+        }
+
+        .content{
+            background-color: goldenrod;
+             outline: double;
+              outline-offset: 3px; 
+               border: 2px ridge black;
+                border-radius: 2px;
+
+        }
+        address, #lyrics, h1, div, pre{
+            font: red;
+            
+            
+            text-align: center;
+
+        }
+
+    </style>
+</head>
+
+<body>
+    <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam tenetur accusamus magni ab, iusto distinctio
+        dolorum? Optio quasi laborum incidunt repudiandae rem in voluptatum? Aliquid quam iste illo numquam cum.</div>
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat facere necessitatibus, fuga officiis doloribus quod similique sint ut quisquam libero in asperiores iure id porro quae, aliquid perferendis voluptatem distinctio.</p>
+<pre>
+    <b>SPD! Emergency!!</b> 
+    Tududududududu (music rolls)
+</pre>
+<div class="content">
+    <h4>Preamble</h4>
+    <p>We the people of India, are solemnly resolved to consititute India into a SOVEREIGN SOCIALIST SECULARIST DEMOCRATIC REPUBLIC nation.</p>
+</div><br><br>
+<address>
+    <pre>
+    Address:
+    NO9,Dubai kurukku sandhu,
+    Dubai main road,
+    Dubai
+    </pre>
+</address><br><br>
+<div><h1>The Boys</h1></div>
+<h5 id="lyrics">Aayi aayi yaaii</h5>
+</body>
+
+</html>
