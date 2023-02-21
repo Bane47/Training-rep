@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+  
 </head>
 
 <body>
@@ -111,14 +112,19 @@
     <iframe width="560" height="315" src="https://www.youtube.com/embed/dR0DBg3zV9c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
      
     <!--image-->
-     <img src="assets/IMG1.jpg" alt="No picture" name=#map width="500px">
+     <img src="assets/IMG1.jpg" alt="No picture" usemap="#map" >
     <map name="map">
-        <area shape="default" coords="411,388,298,159" alt="No picture" href="assets/38.webp">
-        <area shape="default" coords="410,159,492,389" alt="No picture" href="assets/38.webp">
-        <area shape="default" coords="492,160,648,391" alt="No picture" href="assets/38.webp">
-        <area shape="default" coords="649,160,715,392" alt="No picture" href="assets/38.webp">
+        <area shape="rect" coords="411,388,298,159" alt="No picture" target="_blank" href="https://en.wikipedia.org/wiki/HTML">
+        <area shape="rect" coords="410,159,492,389" alt="No picture" href="https://en.wikipedia.org/wiki/Technology">
+        <area shape="rect" coords="492,160,648,391" alt="No picture" href="https://en.wikipedia.org/wiki/Modem">
+        <area shape="rect" coords="649,160,715,392" alt="No picture" href="https://en.wikipedia.org/wiki/Linked_list">
     </map>
-
+<picture>
+    <source media="(min-width:750px)" srcset="/assets/photo.jfif" height="100px" width="100px">
+    <source media="(min-width:450px)" srcset="/assets/IMG1.jpg" height="100px" width="100px">
+    <source media="(min-width:650px)" srcset="assets/38.webp" height="100px" width="100px">
+    <img src="assets/38.webp" alt="No picture" style="width: auto;" height="100px" width="100px">
+</picture>
 
 
 </body>
