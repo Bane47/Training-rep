@@ -4,10 +4,10 @@ class details {
     empname: string;
     empdesignation: string;
     empsalary: number;
-    empproject?: string;
+    empproject? : string;
 
 
-    constructor(empid: number | string, empname: string, empdesignation: string, empsalary: number, empproject?: string) {
+    constructor(empid: number | string, empname: string, empdesignation: string, empsalary: number, empproject ?: string) {
         this.empid = empid;
         this.empname = empname;
         this.empdesignation = empdesignation;
