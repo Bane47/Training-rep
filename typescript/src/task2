@@ -1,0 +1,96 @@
+Question 1:
+Coding:
+class course{
+courseId: number|string;
+courseName: string;
+
+constructor(courseId:number|string,courseName:string){
+this.courseId=courseId;
+this.courseName=courseName;
+}
+courseDetails(){
+console.log(&#39;Course Name: &#39;+this.courseName);
+console.log(&#39;Course ID: &#39;+this.courseId);
+}
+
+}
+class Employee extends course{
+empId:number|string;
+empName:string;
+empDesignation:string;
+constructor(courseId:number|string,courseName:string,empId : number |
+string,empName:string,empDesignation:string){
+super(courseId,courseName);
+this.empId=empId;
+this.empName=empName;
+this.empDesignation=empDesignation;
+}
+employeeDetails(){
+
+console.log(&#39;Employee ID: &#39;+this.empId);
+console.log(&#39;Employee Name: &#39;+this.empName);
+console.log(&#39;Designation: &#39;+this.empDesignation);
+
+}
+}
+class Admin extends Employee{
+adminId:number|string;
+adminName:string;
+constructor(courseId:number|string,courseName:string,empId : number |
+string,empName:string,empDesignation:string,adminId : number|string,adminName:string){
+super(courseId,courseName,empId,empName,empDesignation);
+this.adminId=adminId;
+this.adminName=adminName;
+
+}
+adminDetails(){
+obj.courseDetails();
+obj.employeeDetails();
+
+console.log(&#39;Admin ID&#39;+this.adminId);
+console.log(&#39;Admin Name: &#39;+this.adminName);
+}
+}
+
+let obj= new Admin(&#39;100&#39;,&#39;BSC&#39;,&#39;BSC030&#39;,&#39;Darshan&#39;,&#39;SE&#39;,&#39;300&#39;,&#39;Srikanth&#39;);
+obj.adminDetails();
+
+//---------------------------------
+
+Question 2:
+Coding
+abstract class ElectricityBill{
+public rate:number;
+public units:number;
+
+constructor(rate:number,units:number){
+this.rate=rate;
+this.units=units;
+}
+public abstract billDetails():number;
+}
+class Domestic extends ElectricityBill{
+constructor(rate:number,units:number){
+
+super(rate,units);
+}
+public billDetails():any{
+console.log(&quot;Domestic&quot;);
+console.log(&quot;The cost is: &quot;+this.rate*this.units);
+
+}
+}
+class Commercial extends ElectricityBill{
+constructor(rate:number,units:number){
+super(rate,units);
+}
+public billDetails():any{
+console.log(&quot;Commercial&quot;);
+console.log(&quot;The cost is: &quot;+this.rate*this.units);
+
+}
+}
+let obj=new Domestic(5,500);
+let obj1=new Commercial(10,1000);
+obj.billDetails();
+obj1.billDetails();
